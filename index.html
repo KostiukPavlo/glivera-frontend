@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>glivera-frontend.work</title>
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="page__body">
+    <div class="site-container">
+        <aside class="profile" data-menu>
+            <div class="profile-img">
+                <picture>
+                    <source srcset="img/profile_logo.avif" type="image/avif" />
+                    <source srcset="img/profile_logo.webp" type="image/webp" />
+                    <img loading="lazy" src="img/profile_logo.jpg" class="image" width="220" height="293"
+                        alt="profile_logo" />
+                </picture>
+            </div>
+            <nav class="profile-menu">
+                <div class="profile-menu-item">
+                    <ul class="profile-menu-message">
+                        <li>
+                            <a href="#">Сообщения <span>3</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile-menu-item">
+                    <ul>
+                        <li><a href="#">Профиль</a></li>
+                        <li><a href="#">Настройки</a></li>
+                    </ul>
+                </div>
+                <div class="profile-menu-item">
+                    <ul>
+                        <li><a href="#">Вопросы</a></li>
+                        <li><a href="#">Написать модератору</a></li>
+                    </ul>
+                </div>
+                <div class="profile-menu-item profile-subsribe">
+                    <a href="#">Купить подписку</a>
+                </div>
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="tabs" data-tabs="tabs">
+                <ul class="tabs__nav content-btns">
+                    <li class="tabs__nav-item">
+                        <a id="delete-item" class="content-btns-item delete-item" href="#">Удалить</a>
+                    </li>
+                    <li class="tabs__nav-item">
+                        <a id="addToArchive" class="content-btns-item add-item" href="#">Добавить в архив</a>
+                    </li>
+                    <li class="tabs__nav-item">
+                        <a class="content-btns-item unread-item tabs__nav-btn" href="#">Непрочитанные</a>
+                    </li>
+                    <li class="tabs__nav-item">
+                        <a class="content-btns-item archive-item tabs__nav-btn" href="#">Архив</a>
+                    </li>
+                    <li class="tabs__nav-item search-item">
+                        <input class="content-btns-item search-item" type="text" placeholder="Искать →" />
+                    </li>
+                    <li class="tabs__nav-item">
+                        <button class="burger-item burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                            <span class="burger__line"></span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="tabs__content">
+                    <div class="tabs__panel">
+                        <div class="content-messages">
+                            <div class="content-messages-item content-messages-item--readed">
+                                <label class="messages-checkbox"><input type="checkbox" name="select" /><span
+                                        class="checkmark"></span></label>
+                                <picture class="messages-user_profile">
+                                    <img loading="lazy" src="img/profile.svg" class="image" width="" height=""
+                                        alt="profile" />
+                                </picture>
+                                <div class="messages-user_name">Александр Антонов</div>
+                                <div class="messages-shopping">
+                                    <picture><img loading="lazy" src="img/shopping.svg" class="image" width="16"
+                                            height="16" alt="shopping" /></picture>
+                                </div>
+                                <div class="messages-title">
+                                    здравствуйте. как долго придется ждать нож кото
+                                </div>
+                                <div class="messages-data">04.13.2018</div>
+                                <div class="messages-time">14:02</div>
+                            </div>
+                            <div class="content-messages-item content-messages-item--readed">
+                                <label class="messages-checkbox"><input type="checkbox" name="select" /><span
+                                        class="checkmark"></span></label>
+                                <picture class="messages-user_profile messages-user_profile--online">
+                                    <img loading="lazy" src="img/profile.svg" class="image" width="" height=""
+                                        alt="profile" />
+                                </picture>
+                                <div class="messages-user_name">Gun Machine</div>
+                                <div class="messages-shopping"></div>
+                                <div class="messages-title">
+                                    а почему на ноже нет ни одной царапины?
+                                </div>
+                                <div class="messages-data">12.01.2018</div>
+                                <div class="messages-time">00:14</div>
+                            </div>
+                            <div class="content-messages-item content-messages-item--readed">
+                                <label class="messages-checkbox"><input type="checkbox" name="select" /><span
+                                        class="checkmark"></span></label>
+                                <picture class="messages-user_profile">
+                                    <img loading="lazy" src="img/profile.svg" class="image" width="" height=""
+                                        alt="profile" />
+                                </picture>
+                                <div class="messages-user_name">Диана Павлова</div>
+                                <div class="messages-shopping"></div>
+                                <div class="messages-title">
+                                    нет, мне не нужно. если и вам тоже пофиг, то выб
+                                </div>
+                                <div class="messages-data">04.13.2018</div>
+                                <div class="messages-time">14:02</div>
+                            </div>
+                            <div class="content-messages-item content-messages-item--readed">
+                                <label class="messages-checkbox"><input type="checkbox" name="select" /><span
+                                        class="checkmark"></span></label>
+                                <picture class="messages-user_profile messages-user_profile--online">
+                                    <img loading="lazy" src="img/profile.svg" class="image" width="" height=""
+                                        alt="profile" />
+                                </picture>
+                                <div class="messages-user_name">Otto Zweig</div>
+                                <div class="messages-shopping"></div>
+                                <div class="messages-title">thank you! that’s great!</div>
+                                <div class="messages-data">12.01.2018</div>
+                                <div class="messages-time">00:14</div>
+                            </div>
+                            <div class="content-messages-item content-messages-item--readed">
+                                <label class="messages-checkbox"><input type="checkbox" name="select" /><span
+                                        class="checkmark"></span></label>
+                                <picture class="messages-user_profile">
+                                    <img loading="lazy" src="img/profile.svg" class="image" width="" height=""
+                                        alt="profile" />
+                                </picture>
+                                <div class="messages-user_name">Александр Антонов</div>
+                                <picture class="messages-shopping"><img loading="lazy" src="img/shopping.svg"
+                                        class="image" width="16" height="16" alt="shopping" /></picture>
+                                <div class="messages-title">
+                                    здравствуйте. как долго придется ждать нож кото
+                                </div>
+                                <div class="messages-data">04.13.2018</div>
+                                <div class="messages-time">14:02</div>
+                            </div>
+                            <div class="content-messages-item">
+                                <label class="messages-checkbox"><input type="checkbox" name="select" /><span
+                                        class="checkmark"></span></label>
+                                <picture class="messages-user_profile messages-user_profile--online">
+                                    <img loading="lazy" src="img/profile.svg" class="image" width="" height=""
+                                        alt="profile" />
+                                </picture>
+                                <div class="messages-user_name">Gun Machine</div>
+                                <div class="messages-shopping"></div>
+                                <div class="messages-title">
+                                    а почему на ноже нет ни одной царапины?
+                                </div>
+                                <div class="messages-data">12.01.2018</div>
+                                <div class="messages-time">00:14</div>
+                            </div>
+                            <div class="content-messages-item content-messages-item--readed">
+                                <label class="messages-checkbox"><input type="checkbox" name="select" /><span
+                                        class="checkmark"></span></label>
+                                <picture class="messages-user_profile">
+                                    <img loading="lazy" src="img/profile.svg" class="image" width="" height=""
+                                        alt="profile" />
+                                </picture>
+                                <div class="messages-user_name">Диана Павлова</div>
+                                <div class="messages-shopping"></div>
+                                <div class="messages-title">
+                                    нет, мне не нужно. если и вам тоже пофиг, то выб
+                                </div>
+                                <div class="messages-data">04.13.2018</div>
+                                <div class="messages-time">14:02</div>
+                            </div>
+                            <div class="content-messages-item">
+                                <label class="messages-checkbox"><input type="checkbox" name="select" /><span
+                                        class="checkmark"></span></label>
+                                <picture class="messages-user_profile messages-user_profile--online">
+                                    <img loading="lazy" src="img/profile.svg" class="image" width="" height=""
+                                        alt="profile" />
+                                </picture>
+                                <div class="messages-user_name">Otto Zweig</div>
+                                <div class="messages-shopping"></div>
+                                <div class="messages-title">thank you! that’s great!</div>
+                                <div class="messages-data">12.01.2018</div>
+                                <div class="messages-time">00:14</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="addToArchiveBlock" class="tabs__panel"></div>
+                </div>
+            </div>
+            <div class="content-paggination">
+                <a href="#" class="content-paggination-item">1</a>
+                <a href="#" class="content-paggination-item content-paggination-item--active">2</a>
+                <a href="#" class="content-paggination-item">3</a>
+                <a href="#" class="content-paggination-item">4</a>
+                <a href="#" class="content-paggination-item">5</a>
+                <a href="#" class="content-paggination-item">6</a>
+                <a href="#" class="content-paggination-item">7</a>
+                <a href="#" class="content-paggination-item">8</a>
+                <a href="#" class="content-paggination-item">9</a>
+                <a href="#" class="content-paggination-item">10</a>
+                <div href="#" class="content-paggination-item content-paggination-item--last">
+                    …
+                </div>
+                <a href="#" class="content-paggination-item content-paggination-item--last">123</a>
+                <a href="#" class="content-paggination-item content-paggination-item--last">
+                    <img src="img/next.svg" alt="next" /></a>
+            </div>
+        </main>
+    </div>
+    <script defer="defer" src="js/main.js"></script>
+</body>
+
+</html>
