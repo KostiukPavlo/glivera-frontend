@@ -7,3 +7,9 @@ The website implements:
 - Mobile version
 - Implemented tabs
 - Functionality of deleting and adding messages to the archive
+
+Work Report
+
+TOTAL HOURS: 3:43:36
+Create HTML + CSS 2:26:47
+Js Delete & Archive 1:16:49
